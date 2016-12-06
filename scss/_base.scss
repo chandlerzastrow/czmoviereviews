@@ -1,0 +1,299 @@
+body {
+	background: $desktop-bg;
+}
+//img{
+	//max-width: 90%;
+	//min-width: 90%;
+	//float:none;
+//}
+body,h1,nav,section {
+	@include box();
+}
+.embed-container { 
+	@include span(12);
+	position: relative;
+	 padding-bottom: 56.25%; 
+	 height: 0;
+	  overflow: hidden;
+	   //max-width: 90%; 
+	} 
+	   .embed-container iframe, .embed-container object, .embed-container embed 
+	   { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.center{
+	@include span(3);
+	text-align: center;
+	display:inline-block;
+}
+
+h1{
+	@include span(12);
+	padding-left: 20px;
+	font-size: 1.2em;
+	font-weight: light;
+	text-align: center;
+}
+h2{
+
+	text-align: center;
+	font-weight: normal;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+.textreplace h3{
+	position: absolute;
+	top: -9999em;
+	left: -9999em;
+}
+p{
+	text-align: center;
+}
+a {text-decoration: none; }
+a:visited{
+	color:black;
+}
+nav{
+	@include span(6 last);
+	//padding-right: 100px;
+	padding-top:30px;
+	//text-align: center;
+		ul{list-style-type: none;
+    	margin: 0;
+   		padding: 0;
+    	overflow: hidden;
+    	padding-left: 60px;
+    	//text-align: center;
+    	//display:inline-block;
+    	float:right;
+
+
+		}
+			li{
+				padding-right: 30px;
+				padding-left: 10px;
+				padding-bottom: 10px;
+				float: left;
+				//display:inline;
+			}
+}
+
+.image1{
+
+	img{
+	@include span(12);
+	max-width: 100%;
+	min-width: 100%;
+	float:none;}
+
+
+}
+.textbox{
+	margin-top: 15px;
+	@include span(6);
+	max-width: 45%;
+	min-width: 45%;
+	width:320px;
+	height:300px;
+	//margin-bottom: 150px;
+		p{padding-left: 80px;
+			padding-top: 180px;
+
+		}
+}
+.image3{
+	@include span(3);
+	//width:300px;
+	//height:300px;
+	max-width: 30%;
+	min-width: 30%;
+	height: auto;
+	margin-left: 7px;
+
+}
+.fulltext{
+	@include span(12);
+		margin-top: 60px;
+	margin-bottom: 60px;
+}
+.arrow{
+	@include span(12);
+		margin-top: 20px;
+		img{
+		max-width: 100%;
+		min-width: 100%;}
+	//margin-bottom: 20px;
+}
+.smallerimage{
+	margin-top: 20px;
+	img{
+	@include span(12);
+	max-width: 100%;
+	min-width: 100%;
+	float:right;}
+	
+}
+.textbox2{
+	@include span(6);
+	margin-top: 20px;
+	margin-bottom: 500px;
+
+	max-width: 100%;
+	min-width: 100%;
+	p{padding-left: 170px;
+			padding-top: 180px;
+			
+
+		}
+	
+}
+.smallerimage2{
+	
+	img{
+	@include span(12);
+	//margin-top: 40px;
+	max-width: 100%;
+	min-width: 100%;
+	}
+	
+}
+footer{
+	@include span(12);
+	text-align: center;
+	padding-top: 40px;
+}
+
+@include susy-breakpoint($large) {
+	body {
+		background:$large-bg;
+	}//body
+}//large breakpoint
+
+@include susy-breakpoint($medium) {
+	body {
+		background:$medium-bg;
+		}//body
+	main {
+    	@include span(12);
+    }//main
+    .center{
+	@include span(6);
+	text-align: center;
+	display:inline-block;
+}
+  h1{
+	@include span(3);
+	padding-left: 20px;
+	font-size: 1.2em;
+	font-weight: light;
+}
+nav{
+	@include span(9 last);
+	//padding-right: 100px;
+	padding-top:30px;
+		ul{list-style-type: none;
+    	margin: 0;
+   		padding: 0;
+    	overflow: hidden;
+    	padding-left: 60px;
+    	//display: inline-block;
+    	//float:right;
+
+
+		}
+			li{
+				padding-right: 30px;
+				padding-left: 10px;
+				padding-bottom: 10px;
+				float: left;
+			}
+}
+	img{
+
+	}
+	.image3{
+	@include span(5);
+	//width:300px;
+	//height:300px;
+	max-width: 40%;
+	min-width: 40%;
+	height: auto;
+	margin-left: 20px;
+
+}
+}//medium breakpoint
+
+@include susy-breakpoint($small) {
+	body {
+		background:$small-bg;
+		}//body
+	main {
+    	@include span(12);
+    }//main
+    h1{
+	@include span(12);
+	padding-left: 20px;
+	font-size: 1.2em;
+	font-weight: light;
+}
+nav{
+	@include span(12 last);
+	//padding-right: 100px;
+	//padding-top:30px;
+	padding-bottom: 40px;
+		ul{list-style-type: none;
+    	margin: 0;
+   		padding: 0;
+    	overflow: hidden;
+    	padding-left: 60px;
+    	float:left;
+
+
+		}
+			li{
+				padding-right: 30px;
+				padding-left: 10px;
+				padding-bottom: 10px;
+				float: left;
+			}
+}
+	.image3{
+	@include span(12);
+	//width:300px;
+	//height:300px;
+	max-width: 100%;
+	min-width: 100%;
+	height: auto;
+	margin-left: 30px;
+
+}
+.center{
+	@include span(6);
+	text-align: center;
+	display:inline-block;
+}
+
+
+   // aside {
+    //	@include span(12);
+    //}//aside
+	
+}//small breakpoint
+
+h1,h2,nav,p,footer{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+
+/*li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}*/
+
