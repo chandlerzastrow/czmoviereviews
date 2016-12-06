@@ -1,3 +1,8 @@
+/*$desktop-bg: url;
+$large-bg: url('../img/reviewback.jpg');
+$medium-bg: url('../img/reviewback.jpg');
+$small-bg: url('../img/reviewback.jpg');
+$box-bg: url('../img/reviewback.jpg');*/
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
