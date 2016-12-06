@@ -20,7 +20,7 @@ body,h1,nav,section {
 	   .embed-container iframe, .embed-container object, .embed-container embed 
 	   { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 .center{
-	@include span(3);
+	@include span(6);
 	text-align: center;
 	display:inline-block;
 }
